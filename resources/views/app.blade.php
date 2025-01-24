@@ -3,15 +3,15 @@
 @section('main')
     {{-- Hero Section --}}
     <section id="hero-section" class="bg-emerald-50">
-        <div class="container mx-auto px-4 lg:px-20 grid grid-cols-1 lg:grid-cols-2 items-center">
-            <div>
+        <div class="container mx-auto px-4 lg:px-20 grid grid-cols-1 lg:grid-cols-2 items-center gap-4 py-20">
+            <div class="flex flex-col">
                 <h1 class="text-4xl font-bold mb-4 text-gray-800">
                     Sayuran Segar Langsung dari <span class="text-emerald-600 underline">Hidroponik</span>
                 </h1>
                 <p class="text-md text-gray-600 mb-6 text-justify">
                     Panen Lokal menyediakan sayuran hidroponik berkualitas tinggi, dipetik langsung dari kebun kami. Sehat, segar, dan ramah lingkungan.
                 </p>
-                <a href="" class="bg-emerald-600 text-white px-6 py-3 rounded hover:bg-emerald-700">Jelajahi Produk</a>
+                <a href="" class="bg-emerald-600 text-white text-center px-6 py-3 rounded hover:bg-emerald-700 lg:w-fit">Jelajahi Produk</a>
             </div>
             <div class="flex justify-center items-center">
                 <img src="{{ asset('src/img/img-hero.png') }}" alt="Hero Image" class="w-1/2">
@@ -63,7 +63,7 @@
 
     {{-- About Section --}}
     <section id="about-section" class="bg-emerald-50 flex justify-center">
-        <div class="container mx-auto px-4 py-20 lg:px-20 flex flex-col sm:flex-row items-center">
+        <div class="container mx-auto px-4 py-20 lg:px-20 flex flex-col sm:flex-row items-center gap-4">
             <div class="flex justify-center items-center">
                 <img src="{{ asset('src/img/img-about.png') }}" alt="" class="w-8/12">
             </div>
