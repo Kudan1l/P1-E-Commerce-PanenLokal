@@ -4,9 +4,9 @@ use App\Http\Controllers\AdminController\DashboardController;
 use App\Http\Controllers\AdminController\ProductController;
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('admin.index');
-// });
+Route::get('/', function () {
+    return view('app');
+});
 
 // Route::get('/', [DashboardController::class, 'showDashboard'])->name('admin.dashboard');
 
