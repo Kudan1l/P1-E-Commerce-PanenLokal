@@ -12,4 +12,9 @@ export default defineConfig({
         origin: "http://localhost:5173",
         cors: true,
     },
+
+    build: {
+        outDir: "public/build",
+        emptyOutDir: true,
+    },
 });
