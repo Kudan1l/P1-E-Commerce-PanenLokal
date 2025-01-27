@@ -14,7 +14,7 @@ Panen Lokal adalah platform berbasis web yang dikembangkan menggunakan Laravel u
 ## 🛠️ Teknologi yang Digunakan
 - **Framework**: Laravel 10
 - **Database**: MySQL
-- **Frontend**: Blade, Bootstrap
+- **Frontend**: Blade, Bootstrap, Tailwind CSS
 - **Authentication**: Laravel Breeze / Sanctum (Opsional)
 - **Payment Gateway**: Midtrans / Stripe (Opsional)
 
@@ -41,7 +41,12 @@ Panen Lokal adalah platform berbasis web yang dikembangkan menggunakan Laravel u
    php artisan migrate --seed
    ```
 
-5. **Jalankan Aplikasi**
+5. **Jalankan Tailwind CSS**
+   ```bash
+   npm run dev
+   ```
+
+7. **Jalankan Aplikasi**
    ```bash
    php artisan serve
    ```
