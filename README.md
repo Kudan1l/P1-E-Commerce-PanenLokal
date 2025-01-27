@@ -1,7 +1,7 @@
-# E-Commerce Sayur Segar
+# Panen Lokal
 
 ## 📌 Deskripsi
-E-Commerce Sayur Segar adalah platform berbasis web yang dikembangkan menggunakan Laravel untuk menjual berbagai jenis sayuran segar secara online. Platform ini memungkinkan pengguna untuk menelusuri produk, menambahkan produk ke keranjang belanja, melakukan checkout, serta mengelola pesanan dengan mudah.
+Panen Lokal adalah platform berbasis web yang dikembangkan menggunakan Laravel untuk menjual berbagai jenis sayuran segar secara online. Platform ini memungkinkan pengguna untuk menelusuri produk, menambahkan produk ke keranjang belanja, melakukan checkout, serta mengelola pesanan dengan mudah.
 
 ## 🚀 Fitur Utama
 - 🔍 **Manajemen Produk**: Menampilkan daftar produk dengan informasi lengkap seperti nama, harga, stok, dan deskripsi.
