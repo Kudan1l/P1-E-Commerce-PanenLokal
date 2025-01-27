@@ -15,21 +15,21 @@
 
     {{-- External CSS --}}
     @yield('external-css')
-
 </head>
-<body class="flex flex-col h-screen">
-    @include('components.navbar-main')
-
-    <div class="flex flex-col min-h-screen">
-        <main class="pt-[72px] flex-1 overflow-y-auto">
-            @yield('main') 
-        </main>
-        <!-- Footer -->
-        <footer class="bg-emerald-600 text-white mt-auto py-4 text-center">
-            <p>&copy; 2024 Panen Lokal. All Rights Reserved.</p>
-        </footer>
-    </div>
-
+<body>
+    <div class="flex h-screen">
+        @include('components.navbar-admin')
     
+        <div class="w-5/6 bg-gray-100 flex flex-col">
+            @include('components.header-admin')
+            <main class="px-10 py-6 flex-1 overflow-y-auto">
+                <h1 class="text-4xl font-medium text-gray-600">@yield('header-title', "Dashboard")</h1>
+
+                <div class="mt-6"></div>
+
+                @yield('main')
+            </main>
+        </div>
+    </div>
 </body>
 </html>
