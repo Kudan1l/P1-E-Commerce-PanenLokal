@@ -1,4 +1,4 @@
-# Panen Lokal
+# ✨ Panen Lokal ✨
 
 ## 📌 Deskripsi
 Panen Lokal adalah platform berbasis web yang dikembangkan menggunakan Laravel untuk menjual berbagai jenis sayuran segar secara online. Platform ini memungkinkan pengguna untuk menelusuri produk, menambahkan produk ke keranjang belanja, melakukan checkout, serta mengelola pesanan dengan mudah.
