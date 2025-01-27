@@ -7,11 +7,12 @@
             <i class="bi bi-list text-2xl" x-show="!hamburgerMenu"></i>
             <i class="bi bi bi-x-lg text-2xl" x-show="hamburgerMenu"></i>
         </button>
+        {{-- Active: "text-orange-500", Default: "text-gray-500 hover:text-emerald-600" --}}
         <div class="hidden md:flex space-x-4 order-2">
-            <a href="" class="text-orange-500">Home</a>
-            <a href="" class="text-gray-500 hover:text-emerald-600">Products</a>
-            <a href="" class="text-gray-500 hover:text-emerald-600">About</a>
-            <a href="" class="text-gray-500 hover:text-emerald-600">Contact</a>
+            <x-nav-link-main href="{{ route('home') }}" :active="request()->is('/')">Home</x-nav-link-main>
+            <x-nav-link-main href="{{ route('product') }}" :active="request()->is('product*')">Products</x-nav-link-main>
+            <x-nav-link-main href="" :active="request()->is('')">About</x-nav-link-main>
+            <x-nav-link-main href="" :active="request()->is('')">Contact</x-nav-link-main>
         </div>
         <div class="flex space-x-4 order-3">
             <button class="text-emerald-600 hover:bg-emerald-100 hover:text-gray-800 px-3 py-2 rounded">

@@ -17,16 +17,19 @@
     @yield('external-css')
 
 </head>
-<body>
+<body class="flex flex-col h-screen">
     @include('components.navbar-main')
 
-    <main class="pt-[72px] min-h-screen">
-        @yield('main')
-    </main>
+    <div class="flex flex-col min-h-screen">
+        <main class="pt-[72px] flex-1 overflow-y-auto">
+            @yield('main') 
+        </main>
+        <!-- Footer -->
+        <footer class="bg-emerald-600 text-white mt-auto py-4 text-center">
+            <p>&copy; 2024 Panen Lokal. All Rights Reserved.</p>
+        </footer>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-emerald-600 text-white py-6 text-center">
-        <p>&copy; 2024 Panen Lokal. All Rights Reserved.</p>
-    </footer>
+    
 </body>
 </html>

@@ -2,15 +2,12 @@
 
 use App\Http\Controllers\AdminController\DashboardController;
 use App\Http\Controllers\AdminController\ProductController;
+use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\ProductPageController;
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('admin.index');
-// });
-
-// Route::get('/', [DashboardController::class, 'showDashboard'])->name('admin.dashboard');
-
-// Route::get('/products', [ProductController::class, 'index'])->name('admin.products');
+Route::get('/', [LandingPageController::class, 'index'])->name('home');
+Route::get('/product', [ProductPageController::class, 'index'])->name('product');
 
 Route::prefix('admin')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->name('admin.dashboard');

@@ -24,20 +24,20 @@
         <div class="container mx-auto px-4 py-20 lg:px-20">
             <h1 class="text-3xl font-bold mb-10 text-gray-800">New Products</h1>
             <div class="hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-10 h-[472.2px]" x-data="{ btnAddCart: {} }">
-                <template x-for="index in [1,2,3]" :key="index">
+                @foreach ($products as $product)
                     <div 
-                        @mouseenter="btnAddCart[index] = true"  
-                        @mouseleave="btnAddCart[index] = false" 
+                        @mouseenter="btnAddCart[{{ $loop->iteration }}] = true"  
+                        @mouseleave="btnAddCart[{{ $loop->iteration }}] = false" 
                         class="bg-white p-6 rounded-2xl border flex flex-col gap-4 hover:shadow-xl h-min">
                         
                         <img 
-                            src="https://plus.unsplash.com/premium_photo-1702403157830-9df749dc6c1e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                            src="{{ $product->image }}" 
                             alt="Product Image" 
-                            class="object-cover rounded-xl">
+                            class="object-cover rounded-xl h-60">
                         
                         <div class="flex flex-col gap-2">
-                            <h3 class="text-xl font-bold text-gray-800">Lorem ipsum dolor sit amet</h3>
-                            <span class="font-semibold text-gray-500">Rp 10.000</span>
+                            <h3 class="text-xl font-bold text-gray-800">{{ $product->name }}</h3>
+                            <span class="font-semibold text-gray-500">Rp {{ number_format($product->price, 0, ',', '.') }}</span>
                             <div class="flex gap-2">
                                 <div class="text-orange-500">
                                     <i class="bi bi-star-fill"></i>
@@ -52,11 +52,11 @@
                         
                         <a href="" 
                             class="bg-emerald-600 text-white text-center py-3 rounded-md hover:bg-emerald-500"
-                            x-show="btnAddCart[index]" x-transition>
+                            x-show="btnAddCart[{{ $loop->iteration }}]" x-transition>
                             Add to Cart
                         </a>
                     </div>
-                </template>
+                @endforeach
             </div>            
         </div>
     </section>
