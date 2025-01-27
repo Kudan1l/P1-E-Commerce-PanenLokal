@@ -22,7 +22,7 @@ Panen Lokal adalah platform berbasis web yang dikembangkan menggunakan Laravel u
 1. **Clone Repository**
    ```bash
    git clone https://github.com/agunglaksonoputra/P1-E-Commerce-PanenLokal.git
-   cd panen-lokal
+   cd P1-E-Commerce-PanenLokal
    ```
 2. **Install Dependencies**
    ```bash
