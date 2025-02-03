@@ -12,7 +12,7 @@ Panen Lokal adalah platform berbasis web yang dikembangkan menggunakan Laravel u
 - 📜 **Riwayat Pesanan**: Menampilkan daftar pesanan pengguna.
 
 ## 🛠️ Teknologi yang Digunakan
-- **Framework**: Laravel 10
+- **Framework**: Laravel 11
 - **Database**: MySQL
 - **Frontend**: Blade, Bootstrap, Tailwind CSS
 - **Authentication**: Laravel Breeze / Sanctum (Opsional)
